@@ -17,6 +17,25 @@ button{font:inherit}.btn{border:0;border-radius:10px;padding:11px 16px;font-weig
 table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px;border-bottom:1px solid var(--border);vertical-align:top}th{font-size:13px;color:#667085}.actions{white-space:nowrap}.small{font-size:13px}
 .modal{position:fixed;inset:0;background:#0008;display:flex;align-items:center;justify-content:center;padding:15px;z-index:20}.modalbox{background:white;border-radius:18px;max-width:760px;width:100%;max-height:92vh;overflow:auto;padding:22px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:650px){.formgrid{grid-template-columns:1fr}.statgrid{grid-template-columns:1fr 1fr}}
 .notice{background:#fff7ed;border:1px solid #fed7aa;padding:12px;border-radius:12px;color:#9a3412;margin-bottom:15px}.empty{text-align:center;padding:35px;color:var(--muted)}
+
+/* Tema azul marino — Quiz Studio */
+:root{--bg:#071a33;--card:#0d2747;--text:#f3f7ff;--muted:#a9bdd6;--primary:#3b82f6;--primary2:#2563eb;--ok:#22c55e;--bad:#ef4444;--border:#234566;--shadow:0 10px 35px #00000055}
+body{background:radial-gradient(circle at top,#0d2e52 0,#071a33 42%,#041326 100%);color:var(--text)}
+header{background:linear-gradient(135deg,#031126,#0b2c50,#123f6b)}
+nav{background:#06182e;border-bottom:1px solid var(--border)}
+.tab{color:#b7c9df}.tab.active,.tab:hover{background:#12385f;color:#7fb5ff}
+.panel{background:linear-gradient(145deg,#0e2a4b,#0a213d);border-color:var(--border);box-shadow:var(--shadow)}
+label{color:#dbe9f8}
+select,input,textarea{background:#081d35;color:#eef6ff;border-color:#2b4e70}
+select option{background:#081d35;color:#eef6ff}
+input::placeholder,textarea::placeholder{color:#7891ad}
+.secondary{background:#12385f;color:#9bc6ff}.ghost{background:#17314e;color:#d6e5f5}
+.stat{background:#0a2039;border-color:#234566}.muted{color:var(--muted)}
+.option{background:#0a2039;color:#eef6ff;border-color:#2b4e70}.option:hover{border-color:#5da2ff;background:#0e3156}.option.selected{border-color:#5da2ff;background:#12385f}
+.progress{background:#183653}.badge{background:#12385f;color:#9bc6ff}
+th{color:#9fb5cd}th,td{border-color:#234566}
+.modal{background:#000b}.modalbox{background:#0d2747;color:var(--text);border:1px solid var(--border)}
+.notice{background:#352b13;border-color:#7b5c20;color:#f7d58b}.empty{color:var(--muted)}
 </style></head>
 <body>
 <header><div class="wrap"><div class="brand">📚 Quiz de Estudio</div><div class="sub">Banco de preguntas editable · preguntas aleatorias · progreso y resultados</div></div></header>
