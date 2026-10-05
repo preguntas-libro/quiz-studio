@@ -94,7 +94,10 @@ function applyKnownTopicAssignments(){
   });
   return changed;
 }
-let bank=JSON.parse(localStorage.getItem(KEY)||'null')||JSON.parse(JSON.stringify(initial)); let quiz=null;
+let bank=JSON.parse(localStorage.getItem(KEY)||'null')||JSON.parse(JSON.stringify(initial));
+applyKnownTopicAssignments();
+save();
+let quiz=null;
 const $=id=>document.getElementById(id); const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function save(){localStorage.setItem(KEY,JSON.stringify(bank));}
 function uniq(k){return [...new Set(bank.map(x=>x[k]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));}
