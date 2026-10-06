@@ -22,6 +22,21 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px;bor
 /* Modo quiz: máxima prioridad */
 body.quiz-active{overflow:hidden}.quiz-active header,.quiz-active nav,.quiz-active #prepPanel,.quiz-active #dashboard{display:none!important}.quiz-active main{max-width:none;padding:0}.quiz-active #inicio{padding:0}.quiz-active #quiz{display:block!important;position:fixed;inset:0;z-index:30;margin:0;border:0;border-radius:0;padding:clamp(18px,4vw,56px);overflow:auto;background:#070b14;box-shadow:none}.quiz-active #quiz .quiz-inner{max-width:1000px;margin:auto}.quiz-active .question{font-size:clamp(25px,3vw,38px);line-height:1.42;margin:28px 0}.quiz-active .option{font-size:clamp(17px,1.8vw,22px);padding:18px 20px;border-radius:15px;margin:12px 0}.quiz-active #quiz .btn{font-size:16px;padding:13px 20px}.quiz-active #quiz .progress{height:11px}.quiz-active #quiz .badge{font-size:13px}
 @media(max-width:1050px){.area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.area-grid{grid-template-columns:1fr}.area-card{min-height:0}.area-title{font-size:21px}.area-icon{width:66px;height:66px;font-size:36px}}
+
+/* Modo oscuro gris para las áreas */
+body{background:#242528;color:#ececef}
+header,nav{background:#1f2023}
+.panel{background:#303136}
+.dashboard-title p,.selected-path,.muted{color:#a8a9ae}
+.area-card{background:#303136;box-shadow:0 12px 30px rgba(0,0,0,.24)}
+.area-head{border-bottom-color:rgba(255,255,255,.09)}
+.area-icon{background:#3a3b40;border-color:rgba(255,255,255,.10)}
+.course-btn{background:#3a3b40;color:#eeeeef;border-color:rgba(255,255,255,.08)}
+.course-btn:hover{background:#45464b}
+.course-meta{color:#a5a6ab}
+.area-empty{background:#3a3b40;color:#c9c9cd}
+.area-communication,.area-social,.area-cta,.area-math{--area-bg:#303136}
+.area-communication{border-color:#7667b6}.area-social{border-color:#4f8fc4}.area-cta{border-color:#4c9b69}.area-math{border-color:#b65a63}
 </style></head>
 <body>
 <header><div class="wrap"><div class="brand">Quiz Studio</div><div class="sub">Estudia · Practica · Avanza</div></div></header>
