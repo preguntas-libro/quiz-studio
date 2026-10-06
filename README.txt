@@ -1,2 +1,1 @@
-Quiz Studio — versión corregida
-Reemplaza index.html y .nojekyll en GitHub Pages.
+Reemplaza index.html, .nojekyll y README.txt en la raiz del repositorio.
