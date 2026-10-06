@@ -204,7 +204,7 @@ function answer(i){
  });
  if(ok)quiz.score++;
  quiz.answers.push({q,i,ok});
- $('fb').innerHTML=`<div class="feedback ${ok?'ok':'bad'}">${ok?'✅ ¡Correcta!':'❌ Incorrecta — la correcta está marcada en verde.'}</div>`;
+ $('fb').innerHTML=`<div class="feedback ${ok?'ok':'bad'}">${ok?'✅ ¡Correcta!':`❌ Incorrecta. La respuesta correcta es la ${String.fromCharCode(65+q.correct)}.`}</div>`;
  $('next').disabled=false;
 }
 function next(){if(quiz.i<quiz.qs.length-1){quiz.i++;quiz.locked=false;renderQuestion();}else showResult();}
