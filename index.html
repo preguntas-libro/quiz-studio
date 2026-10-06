@@ -22,7 +22,7 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px;bor
 .course-btn{transition:color .2s ease,background .2s ease,transform .2s ease}.course-btn.disabled{cursor:default;opacity:.58}.course-meta{font-size:11px;color:#64748b;font-weight:650;margin-left:8px}.area-communication{--area-bg:#f1edff;--area-border:#d9ccff;--area-text:#6d55c8}.area-social{--area-bg:#eaf5ff;--area-border:#b9defc;--area-text:#2c82c9}.area-cta{--area-bg:#eafaf0;--area-border:#b8e8c8;--area-text:#238a4b}.area-math{--area-bg:#fff0f1;--area-border:#ffc5ca;--area-text:#c83d4a}
 .area-empty{padding:14px;color:#7c2d12;background:rgba(255,255,255,.5);border-radius:13px;font-size:13px;text-align:center}.prep-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.selected-path{font-size:15px;color:#aab7cc;margin-top:3px}.dashboard-title{text-align:center;margin:8px 0 18px}.dashboard-title h2{margin:0;font-size:26px}.dashboard-title p{margin:6px 0 0;color:#9aa9c2}
 /* Modo quiz: máxima prioridad */
-body.quiz-active{overflow:hidden}.quiz-active header,.quiz-active nav,.quiz-active #prepPanel,.quiz-active #dashboard{display:none!important}.quiz-active main{max-width:none;padding:0}.quiz-active #inicio{padding:0}.quiz-active #quiz{display:block!important;position:fixed;inset:0;z-index:30;margin:0;border:0;border-radius:0;padding:clamp(18px,4vw,56px);overflow:auto;background:#070b14;box-shadow:none}.quiz-active #quiz .quiz-inner{max-width:1000px;margin:auto}.quiz-active .question{font-size:clamp(22px,2.5vw,32px);line-height:1.4;margin:22px 0}.quiz-active .option{font-size:clamp(16px,1.6vw,20px);padding:15px 18px;border-radius:14px;margin:10px 0}.quiz-active #quiz .btn{font-size:16px;padding:13px 20px}.quiz-active #quiz .progress{height:11px}.quiz-active #quiz .badge{font-size:13px}
+body.quiz-active{overflow:hidden}.quiz-active header,.quiz-active nav,.quiz-active #prepPanel,.quiz-active #dashboard{display:none!important}.quiz-active main{max-width:none;padding:0}.quiz-active #inicio{padding:0}.quiz-active #quiz{display:block!important;position:fixed;inset:0;z-index:30;margin:0;border:0;border-radius:0;padding:clamp(18px,4vw,56px);overflow:auto;background:#2f2f2f;box-shadow:none}.quiz-active #quiz .quiz-inner{max-width:1000px;margin:auto}.quiz-active .question{font-size:clamp(18px,1.9vw,26px);line-height:1.4;margin:22px 0}.quiz-active .option{font-size:clamp(14px,1.35vw,18px);padding:12px 16px;border-radius:12px;margin:8px 0}.quiz-active #quiz .btn{font-size:16px;padding:13px 20px}.quiz-active #quiz .progress{height:11px}.quiz-active #quiz .badge{font-size:13px}
 @media(max-width:1050px){.area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.area-grid{grid-template-columns:1fr}.area-card{min-height:0}.area-title{font-size:21px}.area-icon{width:66px;height:66px;font-size:36px}}
 
 /* Modo oscuro gris para las áreas */
@@ -39,6 +39,16 @@ header,nav{background:#1f2023}
 .area-empty{background:#3a3b40;color:#c9c9cd}
 .area-communication,.area-social,.area-cta,.area-math{--area-bg:#303136}
 .area-communication{border-color:#7667b6}.area-social{border-color:#4f8fc4}.area-cta{border-color:#4c9b69}.area-math{border-color:#b65a63}
+<style id="quiz-gray-override">
+.quiz-active #quiz{background:#303030!important;color:#f1f1f1!important}
+.quiz-active #quiz .quiz-inner{background:#383838;border-radius:16px;padding:clamp(16px,3vw,28px);box-sizing:border-box}
+.quiz-active #quiz .option{background:#464646!important;color:#f3f3f3!important;border-color:#666!important;font-size:clamp(14px,1.35vw,18px)!important;padding:12px 16px!important}
+.quiz-active #quiz .option:hover{background:#505050!important;border-color:#8a8a8a!important}
+.quiz-active #quiz .option.selected{background:#555!important;border-color:#aaa!important}
+.quiz-active #quiz .progress{background:#555!important}
+.quiz-active #quiz .progress i{background:#aaa!important}
+.quiz-active .question{font-size:clamp(18px,1.9vw,26px)!important}
+</style>
 </style></head>
 <body>
 <header><div class="wrap"><div class="brand">Quiz Studio</div><div class="sub">Estudia · Practica · Avanza</div></div></header>
